@@ -32,4 +32,4 @@ spring:
         - id: loanEvaluation
           uri: lb://loanEvaluation
           predicates:
-            - Path=/api/v1/executives/**
+            - Path=/loanEvaluation/**
