@@ -24,7 +24,7 @@ spring:
         - id: register
           uri: lb://register
           predicates:
-            - Path=/api/v1/clients/**
+            - Path=/register/**
         - id: solicitude
           uri: lb://solicitude
           predicates:
@@ -32,4 +32,4 @@ spring:
         - id: loanEvaluation
           uri: lb://loanEvaluation
           predicates:
-            - Path=/loanEvaluation/**
+            - Path=/api/v1/executives/**
