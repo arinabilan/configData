@@ -7,7 +7,4 @@ eureka:
     service-url:
       default-zone: http://localhost:8761/eureka
   instance:
-    instance-id: ${spring.application.name}:${server.port}  # Registra la instancia con nombre + puerto
-    prefer-ip-address: true  # Usa IP en lugar de hostname
-    non-secure-port-enabled: true
-    non-secure-port: ${server.port}  # Asegura que se publique el puerto asignado
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
