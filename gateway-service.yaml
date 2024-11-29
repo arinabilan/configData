@@ -24,7 +24,7 @@ spring:
         - id: register
           uri: lb://register
           predicates:
-            - Path=/register/**
+            - Path=/api/v1/clients/**
         - id: solicitude
           uri: lb://solicitude
           predicates:
