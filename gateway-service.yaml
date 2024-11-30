@@ -33,3 +33,15 @@ spring:
           uri: lb://loanEvaluation
           predicates:
             - Path=/loanEvaluation/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS 
+            allowedHeaders:
+              - "*"
