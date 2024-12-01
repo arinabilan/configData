@@ -33,6 +33,10 @@ spring:
           uri: lb://loanEvaluation
           predicates:
             - Path=/loanEvaluation/**
+        - id: tracking
+          uri: lb://tracking
+          predicates:
+            - Path=/tracking/**
       globalcors:
         cors-configurations:
           '[/**]':
